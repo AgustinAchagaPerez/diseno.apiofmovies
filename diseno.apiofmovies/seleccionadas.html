@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body background="images/fondo.jpg" class="mx-auto" style="width: 100%;">
+  <header>
+     <title>TheApiMoviesDB</title>
+         <h1>TheMoviesDB</h1>
+         <div class="containerLogo">
+             <img src="data:image/jpeg;base64,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"
+             alt="Logo TheMovieDB"> 
+        </div>
+        <header>
+          <nav class="navbar navbar-expand ">
+              <a class="navbar-brand text-white" href="#">
+                <img src="images/logo.jpeg" width="30" height="30" class="d-inline-block align-top" alt="">
+                WikiMovies
+              </a>
+              <div class="collapse navbar-collapse text-white" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ">
+                  <li class="nav-item active ">
+                    <a class="nav-link text-white" href="index.html">Cartelera<a/>
+                    </span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white " href="seleccionadas.html">Recomendadas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="contactus.html">Contacto</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+  <div class="section">
+              <h1>Todas las películas que buscás y más</h1>
+           <section id="Acción">
+             <h2>Accion</h2>
+             <br></br>
+             <div class="containeraccion">   
+                   <div class="card" style="width: 18rem;">
+                      <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/sv1xJUazXeYqALzczSZ3O6nkH75.jpg" class="card-img-top" alt="...">    
+                      <div class="card-body">
+                      <h5 class="card-title">Black Panther: Wakanda Forever</h5>
+                      <p class="card-text">La reina Ramonda, Shuri, M'Baku, Okoye y Dora Milaje luchan para proteger a su nación de las potencias mundiales intervencionistas tras la muerte del rey T'Challa. Mientras los habitantes de Wakanda se esfuerzan por afrontar su próximo capítulo, los héroes deben unirse con la ayuda de War Dog Nakia y Everett Ross y forjar un nuevo camino para el reino de Wakanda.
+                        Director: Ryan Coogler</p>
+                      <a target="_blank"a href="https://youtu.be/_Z3QKkl1WyM" class="btn btn-primary">Ver Trailer</a>
+                    </div>
+                    <br></br>
+                    <div class="card" style="width: 18rem;">
+                     <img src="https://www.themoviedb.org/t/p/w300_and_h450_bestv2/jGKCpt3zzbGZbgoza6HCvecqElM.jpg" class="card-img-top" alt="...">    
+                     <div class="card-body">
+                      <h5 class="card-title">Sakra</h5>
+                      <p class="card-text">Cuando un guerrero no pertenece a ninguna parte, el enemigo está en todas partes.
+                        Qiao Feng es el líder respetado de una banda itinerante de artistas marciales. Después de ser acusado injustamente de asesinato y posteriormente exiliado, Qiao Feng huye en busca de respuestas sobre su propia y misteriosa historia de origen y los enemigos desconocidos que trabajan para destruirlo desde las sombras.
+                        Director: Chen Li.</p>
+                      <a target="_blank" href="https://youtu.be/aHP_pyGtFIk" class="btn btn-primary">Ver Trailer</a>
+                    </div>
+                    <br></br>      
+                    <div class="card" style="width: 18rem;">
+                        <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/gOuJBz9u1YVWwvx12lJX56yUT6I.jpg" class="card-img-top" alt="...">    
+                        <div class="card-body">
+                          <h5 class="card-title">Mondocane</h5>
+                          <p class="card-text">En un futuro próximo, la ciudad de Taranto, en el sur de Italia, se verá rodeada de alambradas que nadie, ni siquiera la policía, se atreve a cruzar. Los más pobres se quedan luchando por sobrevivir, mientras las pandillas compiten por el territorio. Dos huérfanos de trece años que crecieron juntos sueñan con unirse a una de las pandillas.
+                            Director: Alessandro Celli.</p>
+                          <a target="_blank" href="https://youtu.be/ZHooqb2XcHc" class="btn btn-primary">Ver Trailer</a>
+                    </div>
+                </div>
+            </section>
+            <br></br>
+           <h3>Comedia</h3> 
+           <section class="Comedia">
+             <br></br> 
+             <div id="containercomedia">
+               <div class="card" style="width: 18rem;">
+                  <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/xvsiRSy1kIwlySogzOxkCFrJWYx.jpg" class="card-img-top" alt="...">    
+                  <div class="card-body">
+                  <h5 class="card-title">Official Competition</h5>
+                 <p class="card-text">Cuando un empresario multimillonario decide impulsivamente crear una película icónica, exige lo mejor. Se contrata a la reconocida cineasta Lola Cuevas para planear este ambicioso proyecto. Completan el equipo de estrellas dos actores con un talento enorme pero con egos aún mayores: el galán de Hollywood Félix Rivero y el actor de teatro radical Iván Torres. Ambos son leyendas, pero no exactamente mejores amigos. A través de una serie de pruebas cada vez más excéntricas planteadas por Lola, Félix e Iván deberán enfrentarse no sólo entre sí sino también con sus propios legados. ¿Quién quedará cuando las cámaras finalmente empiecen a grabar?
+                  Director: Gastón Duprat</p>
+                  <a target="_blank" href="https://youtu.be/i47MmH24rO4" class="btn btn-primary">Ver Trailer</a>
+                </div>
+             
+                <div class="card" style="width: 18rem;">
+                   <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ba6CNrM9CdSVGR61NUHJ1uDfmLz.jpg" class="card-img-top" alt="...">    
+                   <div class="card-body">
+                  <h5 class="card-title">Mirreyes contra Godínez 2: El retiro</h5>
+                  <p class="card-text">Los Mirreyes y los Godínez se enfrentan nuevamente por una tentadora oferta para la empresa Kuri. Para resolver sus problemas, viajan a un retiro corporativo en donde intentan volver a unirse como equipo.</p>
+                  <a target="_blank" href="https://youtu.be/ZY-bF6si194" class="btn btn-primary">Ver Trailer</a>
+                </div>
+               
+                <div class="card" style="width: 18rem;">
+                     <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/ez1EDULOCUUCySHOZU6tz97qbtM.jpg" class="card-img-top" alt="...">    
+                     <div class="card-body">
+                      <h5 class="card-title">Una Esposa de Mentira</h5>
+                     <p class="card-text">Un cirujano plástico, que se enamora de una maestra de escuela mucho más joven, recluta a su leal asistente para que se haga pasar por su futura ex esposa, con el fin de encubrir una mentira descuidada. Cuando más mentiras resultan contraproducentes, los hijos del asistente se involucran y todos se van a pasar un fin de semana en Hawaii que cambiará sus vidas.
+                      Director: Dennis Dugan</p>
+                     <a target="_blank" href="https://youtu.be/fpj7i2CPt8M" class="btn btn-primary">Ver Trailer</a>
+                </div>
+              </div>
+            </section>
+            <br></br>
+            
+            <h3>Ciencia Ficcion</h3> 
+            <section id="Ciencia Ficcion">
+            <div class="containerficcion">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg" class="card-img-top" alt="...">    
+                    <div class="card-body">
+                    <h5 class="card-title">Avatar: El Camino del Agua</h5>
+                   <p class="card-text">Ambientada más de una década después de los acontecimientos de la primera película, conoce la historia de la familia Sully (Jake, Neytiri y sus hijos), los problemas que los persiguen, hasta dónde llegan para mantenerse a salvo, las batallas que libran. mantenerse con vida y las tragedias que soportan.
+                    Director: James Cameron.</p>
+                    <a target="_blank"  href= "https://youtu.be/o5F8MOz_IDw" class="btn btn-primary">Ver Trailer</a>
+                  </div>
+            
+                  <div class="card" style="width: 18rem;">
+                     <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/kZv92eTc0Gg3mKxqjjDAM73z9cy.jpg" class="card-img-top" alt="...">    
+                     <div class="card-body">
+                    <h5 class="card-title">x-Men Fenix Oscuro</h5>
+                    <p class="card-text">Los X-Men se enfrentan a su enemigo más formidable y poderoso cuando uno de los suyos, Jean Grey, comienza a perder el control. Durante una misión de rescate en el espacio exterior, Jean casi muere cuando es golpeada por una misteriosa fuerza cósmica. Una vez que regresa a casa, esta fuerza no sólo la hace infinitamente más poderosa, sino también mucho más inestable. Los X-Men ahora deben unirse para salvar su alma y luchar contra los extraterrestres que quieren usar las nuevas habilidades de Grey para gobernar la galaxia.
+                     Director:Simón Kinberg.</p>
+                    <a target="_blank" href="https://youtu.be/azvR__GRQic" class="btn btn-primary">Ver Trailer</a>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                       <img src="https://www.themoviedb.org/t/p/w600_and_h900_bestv2/lRQiJXETkCnVVurHmglNvMXrZOx.jpg" class="card-img-top" alt="...">    
+                       <div class="card-body">
+                        <h5 class="card-title">Scarie Movie</h5>
+                       <p class="card-text">¡Un grupo de adolescentes de aspecto familiar se ve perseguido por un asesino enmascarado vagamente reconocible! A medida que las víctimas comienzan a acumularse y las risas aumentan, ¡ninguna de tus películas de terror favoritas escapa a la sátira nítida de esta parodia escandalosamente divertida!
+                        Director: Keenen Ivory Wayans</p>
+                       <a target="_blank" href="https://youtu.be/HTLPULt0eJ4" class="btn btn-primary">Ver Trailer</a>
+                  </div>
+                
+                </div>
+            </section>
+            <div id="pagination">
+                <!-- Espacio destinado para Agregar botones de paginación de Anterior y Siguiente </div> -->
+        </main>
+          <footer>
+            <a href="https://www.themoviedb.org/signup?language=es-es" class="btn btn-primary">Sumate a nuestra comunidad</a>
+            </footer>
+  </div class="section">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>   
+  <script src= script.js ></script>
+  </html>    
